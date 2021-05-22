@@ -1,4 +1,4 @@
-.coin-container {
+/* .coin-container {
   display: flex;
   justify-content: center;
 }
@@ -64,4 +64,133 @@
 
 .green {
   color: #11d811;
+}
+
+@media only screen and (max-width: 768px){
+  .coin-row{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+  }
+} */
+
+.coin-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.coin-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #d7d7d7;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.coin {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+}
+
+.coin h1 {
+  font-size: 16px;
+}
+
+.coin img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
+
+.all-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.coin-price {
+  font-size: 16px;
+}
+
+.prize-difference {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-red {
+  margin-right: 5px;
+  color: #f00606;
+}
+
+.icon-green {
+  margin-right: 5px;
+  color: #11d811;
+}
+
+.coin-percent {
+  font-size: 14px;
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #11d811;
+}
+
+.other-data {
+  display: flex;
+}
+
+.other-data p {
+  margin: 0px 20px;
+}
+
+@media only screen and (max-width: 786px) {
+  .coin-container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .coin-row {
+    flex-direction: column;
+    height: 170px;
+    justify-content: space-evenly;
+  }
+
+  .all-data {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .other-data {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .other-data p {
+    font-size: 12px;
+    margin: 10px 0px;
+  }
 }

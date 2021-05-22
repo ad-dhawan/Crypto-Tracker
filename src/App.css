@@ -48,3 +48,14 @@
 .coin-input::placeholder{
   color: #353637;
 }
+
+@media only screen and (max-width: 786px){
+  .coin-text{
+    font-size: 28px;
+  }
+
+  .coin-input{
+    width: 270px;
+    height: 40px;
+  }
+}
